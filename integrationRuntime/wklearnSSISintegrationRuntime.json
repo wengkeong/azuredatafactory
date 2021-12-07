@@ -1,0 +1,30 @@
+{
+	"name": "wklearnSSISintegrationRuntime",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Southeast Asia",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8,
+				"vNetProperties": {
+					"subnetId": "/subscriptions/589adc58-8b8e-4ba2-9b99-6c2e0d01a29e/resourceGroups/wklearnresourcegroup/providers/Microsoft.Network/virtualNetworks/wklearnvirtualnetwork/subnets/default"
+				}
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "wklearnmysqlserver.database.windows.net",
+					"catalogAdminUserName": "azureuser",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
