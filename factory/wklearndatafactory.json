@@ -1,0 +1,9 @@
+{
+	"name": "wklearndatafactory",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7a447433-1661-4b88-b808-a96a2d5a82a6",
+		"tenantId": "4def3975-9727-438f-bb7c-407e9eb903a7"
+	}
+}
